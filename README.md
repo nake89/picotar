@@ -1,4 +1,4 @@
-# 📼 nanotar
+# 📼 picotar
 
 [![npm version][npm-version-src]][npm-version-href]
 [![bundle][bundle-src]][bundle-href]
