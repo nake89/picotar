@@ -16,10 +16,12 @@ export type TarFileItem<DataT = Uint8Array> = {
 };
 
 export interface ParsedTarFileItem extends TarFileItem {
-  type: "file" | "directory" | number;
+  type: ParsedTarFileItemType;
   size: number;
-  readonly text: string;
+  readonly text?: string;
 }
+
+export type ParsedTarFileItemType = "file" | "directory" | number;
 
 export interface TarFileAttrs {
   /**
